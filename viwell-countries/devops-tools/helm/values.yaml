@@ -1,0 +1,12 @@
+app:
+  name: "viwell-countries"
+  port: 8080
+  count: 1
+  image: "mostafasa3ed/viwell_countries"
+  tag: "1.0.1-v1"
+  serviceName: viwell-countries
+  memory: 512Mi
+  cpu: 250m
+  namespace: viwell
+  targetPort: 8080
+  NodePort: 30380
