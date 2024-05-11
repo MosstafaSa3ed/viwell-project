@@ -52,6 +52,8 @@ jobs:
           echo "image=$ECR_REGISTRY/$ECR_REPO_Countries:$IMAGE_TAG" >> $GITHUB_OUTPUT
           
       - name: Build and push helm for Countries App to Amazon ECR
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
           helm package ./viwell-countries/devops-tools/helm
-          helm chart push $ECR_REGISTRY/$ECR_REPO_Countries:viwell-countries-1.0.1.tgz
+          helm push ./viwell-countries-1.0.1.tgz oci://$ECR_REGISTRY
