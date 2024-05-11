@@ -31,10 +31,16 @@ To use it you need to do the following:
 **4. helm charts templates for both applications (airports & countries)**
 
 Helm chart template for easy maintance and easy deployment for all needed services with the application.
+
 Each template contains the following:
 1. deployment file
 2. ingress using nginx-controller
 3. service (ClusterIP)
 
+**NOTICE**
+
+You need to add the following two entries in /etc/hosts file to be able to call the services
+${minikube ip} airports.apps.org
+${minikube ip} countries.apps.org
 
    
