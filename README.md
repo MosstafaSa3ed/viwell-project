@@ -1,6 +1,6 @@
 **Viwell APPS**
 
-This Repo Contain the following:
+This Repo Contains the following:
 1. Ansible playbook to deploy minikube on Ubuntu Machine
 2. cronjob on kubernetes for periodic login to ECR
 3. deploy.sh file to deploy the environment on kubernetes using helm
@@ -9,7 +9,8 @@ This Repo Contain the following:
 
 **1. Ansible playbook to deploy minikube on Ubuntu Machine**
 
-To use Ansible playbook you need to install it on the target machine which gonna host minikube
+To use Ansible playbook you need to install it on the target machine which gonna host minikube.
+
 you can run it from ./ansible dir with:
 ```
 ansible-playbook main.yml
@@ -30,7 +31,7 @@ To use it you need to do the following:
 **4. helm charts templates for both applications (airports & countries)**
 
 Helm chart template for easy maintance and easy deployment for all needed services with the application.
-Each template contain the following:
+Each template contains the following:
 1. deployment file
 2. ingress using nginx-controller
 3. service (ClusterIP)
