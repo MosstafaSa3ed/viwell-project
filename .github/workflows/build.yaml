@@ -54,4 +54,6 @@ jobs:
       - name: Build and push helm for Countries App to Amazon ECR
         run: |
           helm package ./viwell-countries/devops-tools/helm
-          helm push viwell-countries-1.0.1.tgz oci://$ECR_REGISTRY
+          pwd
+          ls
+          helm push ./viwell-countries-1.0.1.tgz oci://$ECR_REGISTRY
