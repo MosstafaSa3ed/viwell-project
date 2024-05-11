@@ -40,7 +40,8 @@ Each template contains the following:
 **NOTICE**
 
 You need to add the following two entries in /etc/hosts file to be able to call the services
+```
 ${minikube ip} airports.apps.org
 ${minikube ip} countries.apps.org
-
+```
    
