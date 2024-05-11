@@ -25,3 +25,5 @@ spec:
             cpu: "{{ .Values.app.cpu }}"
         ports:
         - containerPort: {{ .Values.app.targetPort }}
+      imagePullSecrets:
+      - name: ecr

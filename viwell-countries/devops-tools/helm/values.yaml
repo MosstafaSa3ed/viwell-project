@@ -2,7 +2,7 @@ app:
   name: "viwell-countries"
   port: 8080
   count: 1
-  image: "mostafasa3ed/viwell_countries"
+  image: "622931036635.dkr.ecr.eu-west-3.amazonaws.com/viwell-countries"
   tag: "1.0.1-v1"
   serviceName: viwell-countries
   memory: 512Mi
@@ -10,3 +10,4 @@ app:
   namespace: viwell
   targetPort: 8080
   NodePort: 30380
+  host: countries.apps.org
