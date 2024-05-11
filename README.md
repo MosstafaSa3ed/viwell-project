@@ -8,15 +8,18 @@ This Repo Contain the following:
 
 
 **1. Ansible playbook to deploy minikube on Ubuntu Machine**
+
 To use Ansible playbook you need to install it on the target machine which gonna host minikube
 you can run it from ./ansible dir with:
 ```
 ansible-playbook main.yml
 ```
 **2. cronjob on kubernetes for periodic login to ECR**
+
 To create Token for ECR to pull images from it every hour you need to replace access_key and secret_access_key on this file with the provided ones.
 
 **3. deploy.sh file to deploy the environment on kubernetes using helm**
+
 Bash script with the aim to deploy our 2 applications using helm charts.
 
 To use it you need to do the following:
@@ -25,6 +28,7 @@ To use it you need to do the following:
 3. run ``` sh deploy.sh ```
 
 **4. helm charts templates for both applications (airports & countries)**
+
 Helm chart template for easy maintance and easy deployment for all needed services with the application.
 Each template contain the following:
 1. deployment file
