@@ -73,7 +73,7 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPO_Airports:1.0.1-v1
           echo "image=$ECR_REGISTRY/$ECR_REPO_Airports:$IMAGE_TAG" >> $GITHUB_OUTPUT
           
-      - name: Build and push helm for Countries App to Amazon ECR
+      - name: Build and push helm for Airports App to Amazon ECR
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
